@@ -17,3 +17,20 @@
     border: none;
     outline: none;
 }
+
+.note_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note_footer img{
+    width: 26px;
+    cursor: pointer;
+    opacity: 0;
+    transition:300ms;
+}
+
+.note:hover .note_footer img{
+    opacity: 1;
+}
