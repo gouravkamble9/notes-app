@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.sidebar .spin{
+    transform: rotate(45deg);
+}
+
 .sidebar_list{
     display: flex;
     flex-direction: column;

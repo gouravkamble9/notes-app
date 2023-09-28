@@ -5,6 +5,7 @@
     margin: 0 auto;
     gap: 20px;
     padding: 40px;
+    justify-content: space-evenly;
 }
 
 .custom-scroll::-webkit-scrollbar{
