@@ -25,7 +25,10 @@ const NotesContainer = (props) => {
           deleteNote={props.deleteNote}
           updateText={props.updateText}
           />
-        )):<h3>No Notes Present</h3>}
+        )):
+        <div className="empty-notes">
+        <h3>No Notes Present</h3>
+        </div>}
       </div>
     </div>
   );

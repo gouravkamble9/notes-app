@@ -14,3 +14,16 @@
     gap: 20px;
     overflow-y: scroll;
 }
+
+.note-container_notes {
+    width: 100%;
+    height: 100%;
+}
+
+.note-container_notes .empty-notes{
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
