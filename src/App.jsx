@@ -47,6 +47,7 @@ const App = () => {
     <div className='App'>
       <SideBar addNote={addNote}/>
       <NotesContainer notes={notes}
+      SetNotes={SetNotes}
       deleteNote={deleteNote}
       updateText={updateText}
       />

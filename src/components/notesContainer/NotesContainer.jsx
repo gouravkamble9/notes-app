@@ -3,7 +3,10 @@ import Note from "../note/Note";
 import "./NotesContainer.css";
 
 const NotesContainer = (props) => {
-  const [query,SetQuery]=useState()
+
+  const [result,SetResult]=useState([])
+  const [query,SetQuery]=useState("")
+
   const reverArray = (arr) => {
     const array = [];
 
@@ -15,28 +18,34 @@ const NotesContainer = (props) => {
   };
 
   let notes = reverArray(props.notes);
-  
-  let notes1=notes.filter((item)=>{
-      return item.text.includes(query)
-  })
 
-  notes=[...notes1]
-
-  console.log(notes1)
+  const handleSearch=()=>{
+    if (query.length <= 0) {
+      return
+    } else {
+      const filterBySearch = notes.filter((item) =>
+        item.text.toLowerCase().includes(query.toLowerCase())
+      );
+      SetResult(filterBySearch);
+    }
+  }
+  // console.log(result.length)
+  // console.log(query.length)
+  // console.log(notes.length)
 
   return (
     <div className="note-contaier">
       <div className="notes-top">
         <h2>Notes</h2>
         <input
-        value={query}
-        onChange={(e)=>SetQuery(e.target.value)} 
+        onChange={e=>{SetQuery(e.target.value) 
+          handleSearch()}}
         type="text" 
         placeholder="search"/>
       </div>
       <div className="note-container_notes custom-scroll">
         {notes?.length > 0 ? (
-          notes.map((item, index) => (
+          (query.length>0 ? result:notes).map((item, index) => (
             <Note
               key={item.id}
               note={item}
