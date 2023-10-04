@@ -22,8 +22,10 @@ const Note = (props) => {
     let day=date.getDate()
 
     const month=monthNames[date.getMonth()]
+    let year=date.getFullYear()
+    
 
-    return `${hrs}:${min} ${amPm} ${day} ${month} `
+    return `${hrs}:${min} ${amPm} ${day} ${month} ${year}`
 
   }
 
