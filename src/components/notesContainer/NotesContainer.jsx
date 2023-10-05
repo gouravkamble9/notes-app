@@ -41,6 +41,7 @@ const NotesContainer = (props) => {
         onChange={e=>{SetQuery(e.target.value) 
           handleSearch()}}
         type="text" 
+        className="bo"
         placeholder="search"/>
       </div>
       <div className="note-container_notes custom-scroll">
