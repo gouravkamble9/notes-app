@@ -29,9 +29,7 @@ const NotesContainer = (props) => {
       SetResult(filterBySearch);
     }
   }
-  // console.log(result.length)
-  // console.log(query.length)
-  // console.log(notes.length)
+
 
   return (
     <div className="note-contaier">
