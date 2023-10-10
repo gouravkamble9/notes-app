@@ -37,11 +37,13 @@
 .notes-top input{
     height: 30px;
     padding: 5px;
-    /* border-radius: 10px; */
+    border-radius: 7px;
     outline: none;
+
     
 }
 
 .notes-top .bo:focus{
     border: 2px solid #b693fd;
+    border-radius: 7px;
 }
