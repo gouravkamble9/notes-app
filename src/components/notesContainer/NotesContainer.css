@@ -36,9 +36,11 @@
 
 .notes-top input{
     height: 30px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 7px;
     outline: none;
+    background-color: #b693fd;
+    border: none;
 
     
 }
