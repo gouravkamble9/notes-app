@@ -13,7 +13,7 @@ This repository contains a React-based Notes App with a variety of features to h
 - **Color-Coding:** Categorize and prioritize your notes with various colors.
 - **User-Friendly Interface:** Enjoy an intuitive and user-friendly note-taking experience.
 - **Responsive Design:** Use the app seamlessly on both desktop and mobile devices.
-- **Persistent Storage:** Your notes are stored persistently, so you won't lose your valuable information.
+- **Persistent Storage:** Your notes are stored persistently, so you won't lose your valuable information using Local Storage.
 
 ## Usage
 
